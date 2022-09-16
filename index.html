@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder</title>
+    <link rel="stylesheet" href="../vishal/index.css">
+</head>
+<body>
+    <div class="box1">
+        <label for="Folder">Folder</label>
+        <select name="Folder" id="select" value="Folders" onclick="view()" >
+            <option value="table1">Table1</option>
+            <option value="table2">Table2</option>
+            <option value="table3">Table3</option>
+        </select>
+
+    </div>
+    <div id="info">
+        <table style="width:100%">
+            <tr>
+              <th>File Name</th>
+              <th>File Size</th>
+              <th><button type="submit">info</button></th>
+            </tr>
+            <tr>
+              <td>Photos</td>
+              <td>10kb</td>
+              <td>More info</td>
+            </tr>
+            <tr>
+              <td>Document</td>
+              <td>10kb</td>
+              <td>More info</td>
+            </tr>
+          </table>
+          
+    </div>
+    <script>
+        function view(){
+            var zone = document.getElementById("select");
+
+            if (zone.value == "table1"){
+
+                document.getElementById("info").style.display = "block";
+            }
+            else {
+                document.getElementById("info").style.display = "none";
+
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
